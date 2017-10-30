@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.FormularioDiagnostico">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0,20,0,0"
+                    Android="0"
+                    WinPhone="0" />
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+            <Label Text="Ingrese el diagnóstico " TextColor="#f35e20" FontSize="25" />
+            <Editor x:Name="DiagnosticoT" Text="Diagnostico" />
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Guardar" Clicked="Crear" />
+                <Button Text="Cancelar" Clicked="Cancelar" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

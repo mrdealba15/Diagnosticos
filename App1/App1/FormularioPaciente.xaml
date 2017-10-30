@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.FormularioPaciente">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0,20,0,0"
+                    Android="0"
+                    WinPhone="0" />
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+            <Label Text="Ingrese al paciente " TextColor="#f35e20" FontSize="25" />
+            <Entry x:Name="NombreT" Placeholder="Nombre"/>
+            <Entry x:Name="ApellidoT" Placeholder="Apellido" />
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Crear" Clicked="Crear" />
+                <Button Text="Cancelar" Clicked="Cancelar" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
